@@ -1,0 +1,109 @@
+/* General Background and Color Palette */
+:root {
+    --background-color: #2e2d2b; /* Deep Warm Gray */
+    --sidebar-background: #3a3a3a; /* Slightly Lighter Gray for Sidebar */
+    --chat-background: #2d2d2d; /* Darker Background for Chat */
+    --button-background: #4a4a4a; /* Dark Gray for Buttons */
+    --button-hover-color: #e08f3e; /* Cozy Amber for Hover Effects */
+    --accent-color: #f7c59f; /* Soft Creamy Accent Color */
+    --text-color: #f3f3f3; /* Off-white for Text */
+    --link-color: #ffba7b; /* Warm Orange for Links */
+    --input-background: #3a3a3a; /* Dark Input Background */
+    --input-border: #e08f3e; /* Amber Border for Inputs */
+    --scrollbar-thumb-color: rgba(255, 255, 255, 0.2); /* Scrollbar Thumb Color */
+}
+
+/* Background */
+html, body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar-1bTr9X,
+.scroller-2xwqzJ {
+    background-color: var(--sidebar-background);
+    border-radius: 10px;
+}
+
+/* Channel & Category Boxes */
+.channelList-2pW8lB, .category-3d8HzN {
+    background-color: var(--sidebar-background);
+    border-radius: 8px;
+}
+
+.category-3d8HzN {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Chat */
+.chat-1pWynT {
+    background-color: var(--chat-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.chat-1pWynT .message-2LNn6p {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Buttons (e.g., Reply, Add Emoji) */
+button, .btn-1fboDx {
+    border-radius: 8px;
+    background-color: var(--button-background);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn-1fboDx:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Text and Links */
+.message-2LNn6p a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.message-2LNn6p a:hover {
+    text-decoration: underline;
+}
+
+/* Input Fields */
+.form-3JXL1z {
+    background-color: var(--input-background);
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.form-3JXL1z:focus-visible {
+    border-color: var(--button-hover-color);
+}
+
+/* Transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
